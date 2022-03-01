@@ -3,52 +3,142 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
+    color: rgb(225, 239, 230);
 }
 
 html {
@@ -62,16 +152,33 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, i {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i {
     text-decoration: none;
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: rgb(0, 4, 17, .8);
 }
 
 h2 {
     font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 8%;
 }
 
 h3 {
@@ -80,13 +187,18 @@ h3 {
 
 h4 {
     font-size: 4rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-p, a {
+p,
+a {
     font-size: 3rem;
 }
 
+
 /* header section */
+
 header {
     width: 100%;
     height: 100vh;
@@ -96,39 +208,148 @@ header {
     background-repeat: no-repeat;
 }
 
+h1 a {
+    font-size: 5rem;
+}
+
+header nav {
+    background-color: rgb(0, 4, 17, .8);
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+
+.links a {
+    font-size: 2rem;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands,
+.fab {
+    padding: 1%;
+}
+
+
 /* spacer */
+
 .spacer {
     width: 100%;
     height: 20vh;
     background-color: rgb(0, 4, 17);
 }
+
 .spacer-sm {
     width: 100%;
     height: 10vh;
     background-color: rgb(0, 4, 17);
 }
 
+
 /* menu */
 
 .menu {
     width: 100%;
-    height: auto;
+    height: 200vh;
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
+    background-color: black;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
+article {
+    background-color: rgb(0, 4, 17, .8);
+}
+
+
+/* .menu-item {
+    display: flex;
+    align-items: flex-start;
+} */
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(0, 4, 17, .8);
+    padding: 10%;
+}
+
+section.menu-section {
+    width: 50%;
+    padding: 5%
+}
+
+.titles {
+    font-size: 5rem;
+}
+
+article .menu {
+    background-color: rgb(0, 4, 17, .8);
+}
+
+
+/* article div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+
 /* footer section */
+
 footer {
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
 }
 
+footer p {
+    background-color: rgb(0, 4, 17);
+}
+
+footer nav {
+    background-color: rgb(0, 4, 17);
+}
+
+footer a {
+    padding: 1%;
+    margin-left: 12%;
+}
+
+
+/* .bottomlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin-left: 40%;
+} */
+
+.rightsreserved {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
 /* mobile media query */
+
 @media (max-width: 428px) {
     /* header section */
     .header-title {
@@ -137,12 +358,10 @@ footer {
         text-align: center;
         font-size: 4rem;
     }
-
     /* menu */
     .menu {
         background-image: none;
     }
-
     /* footer section */
     footer {
         height: auto;
