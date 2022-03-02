@@ -388,9 +388,22 @@ footer nav {
 
 @media (max-width: 428px) {
     /* header section */
+    h1 {
+        text-align: center;
+    }
+    h1 a {
+        font-size: 4rem;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
     /* gallery section */
     .gallery {
         height: auto;
+    }
+    .gallery img {
+        width: 100%;
     }
     /* about us section */
     .about {
@@ -406,6 +419,10 @@ footer nav {
     /* contact us section */
     .contact h3 {
         padding-top: 2.5vh;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
     }
     .info {
         flex-wrap: wrap;
@@ -426,5 +443,11 @@ footer nav {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        text-align: center;
+    }
+    .bottomlinks {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40%;
     }
 }
