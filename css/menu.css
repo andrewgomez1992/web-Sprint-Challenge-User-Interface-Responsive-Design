@@ -352,6 +352,35 @@ footer a {
 
 @media (max-width: 428px) {
     /* header section */
+    header a {
+        font-size: 4rem;
+        text-align: center;
+        color: rgb(225, 239, 230);
+    }
+    * {
+        color: black;
+    }
+    h2 {
+        font-size: 4rem;
+        border-bottom: 8px solid black;
+        padding: 5%;
+    }
+    h4 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .titles {
+        border: 4px solid black;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+        text-align: center;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
     .header-title {
         width: 75%;
         margin: 0 auto;
@@ -361,11 +390,58 @@ footer a {
     /* menu */
     .menu {
         background-image: none;
+        background: rgb(225, 239, 230);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    section.menu-section {
+        width: 80%;
+    }
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 8px solid black;
+        padding: 5%;
+    }
+    .menu-item p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .menu-container {
+        background: rgb(225, 239, 230);
+        color: black;
+        flex-direction: column;
+        align-items: center;
     }
     /* footer section */
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     footer {
-        height: auto;
+        height: 50vh;
         padding-top: 2.5vh;
         font-size: 2rem;
+        text-align: center;
+    }
+    footer p {
+        color: rgb(225, 239, 230);
+        text-align: center;
+    }
+    a {
+        color: rgb(225, 239, 230);
+        /* margin-right: 12%; */
+    }
+    footer a {
+        margin-right: 12%
+    }
+    .fa-brands,
+    .fab {
+        color: rgb(225, 239, 230);
     }
 }
